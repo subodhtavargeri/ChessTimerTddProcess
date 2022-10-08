@@ -28,6 +28,7 @@
 		5BDD67DC28F20B0300F0FEE6 /* PlayerTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67DB28F20B0300F0FEE6 /* PlayerTimerViewController.swift */; };
 		5BDD67DE28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67DD28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift */; };
 		5BDD67E128F2102000F0FEE6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67E028F2102000F0FEE6 /* Player.swift */; };
+		5BDD67E328F2123700F0FEE6 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67E228F2123700F0FEE6 /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		5BDD67DB28F20B0300F0FEE6 /* PlayerTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerViewController.swift; sourceTree = "<group>"; };
 		5BDD67DD28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerPresenterSpy.swift; sourceTree = "<group>"; };
 		5BDD67E028F2102000F0FEE6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5BDD67E228F2123700F0FEE6 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				5BDD67D628F207E100F0FEE6 /* Spy */,
 				5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */,
 				5BDD67DB28F20B0300F0FEE6 /* PlayerTimerViewController.swift */,
+				5BDD67E228F2123700F0FEE6 /* GameTests.swift */,
 			);
 			path = PlayerTimeTest;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDD67DA28F2092700F0FEE6 /* GameSpy.swift in Sources */,
+				5BDD67E328F2123700F0FEE6 /* GameTests.swift in Sources */,
 				5BDD67DE28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift in Sources */,
 				5BDD67D828F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift in Sources */,
 				5BDD67C728F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift in Sources */,
