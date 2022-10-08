@@ -22,6 +22,7 @@
 		5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */; };
 		5BDD67D128F1E63800F0FEE6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D028F1E63800F0FEE6 /* Game.swift */; };
 		5BDD67D328F1E65000F0FEE6 /* PlayerTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */; };
+		5BDD67D528F202ED00F0FEE6 /* PlayerTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D428F202ED00F0FEE6 /* PlayerTimerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerViewController.swift; sourceTree = "<group>"; };
 		5BDD67D028F1E63800F0FEE6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTimerViewController.xib; sourceTree = "<group>"; };
+		5BDD67D428F202ED00F0FEE6 /* PlayerTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		5BDD679328F1DF9100F0FEE6 /* ChessTimerTddProcess */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD67CA28F1E4C200F0FEE6 /* ChessTimerRouter.swift */,
 				5BDD67C428F1E28C00F0FEE6 /* PlayerTime */,
 				5BDD679428F1DF9100F0FEE6 /* AppDelegate.swift */,
 				5BDD679628F1DF9100F0FEE6 /* SceneDelegate.swift */,
@@ -119,7 +122,6 @@
 				5BDD679D28F1DF9200F0FEE6 /* Assets.xcassets */,
 				5BDD679F28F1DF9200F0FEE6 /* LaunchScreen.storyboard */,
 				5BDD67A228F1DF9200F0FEE6 /* Info.plist */,
-				5BDD67CA28F1E4C200F0FEE6 /* ChessTimerRouter.swift */,
 				5BDD67CC28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift */,
 			);
 			path = ChessTimerTddProcess;
@@ -149,6 +151,7 @@
 				5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */,
 				5BDD67D028F1E63800F0FEE6 /* Game.swift */,
 				5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */,
+				5BDD67D428F202ED00F0FEE6 /* PlayerTimerFactory.swift */,
 			);
 			path = PlayerTime;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				5BDD67CD28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift in Sources */,
 				5BDD679528F1DF9100F0FEE6 /* AppDelegate.swift in Sources */,
 				5BDD679728F1DF9100F0FEE6 /* SceneDelegate.swift in Sources */,
+				5BDD67D528F202ED00F0FEE6 /* PlayerTimerFactory.swift in Sources */,
 				5BDD67C928F1E44400F0FEE6 /* PlayerTimerPresenter.swift in Sources */,
 				5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */,
 				5BDD67CB28F1E4C200F0FEE6 /* ChessTimerRouter.swift in Sources */,
@@ -481,7 +485,6 @@
 				INFOPLIST_FILE = ChessTimerTddProcess/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +511,6 @@
 				INFOPLIST_FILE = ChessTimerTddProcess/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

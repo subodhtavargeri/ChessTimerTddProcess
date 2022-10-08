@@ -10,6 +10,7 @@ class Router: RouterProtocol {
     }
     
     func routeToPlayerTimer() {
-
+        let playerTimerController = PlayerTimerFactory.create(router: self)
+        navigationController.pushViewController(playerTimerController, animated: true)
     }
 }
