@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  ChessTimerTddProcess
-//
-//  Created by Subodh Tavargeri on 08/10/22.
-//
 
 import UIKit
 

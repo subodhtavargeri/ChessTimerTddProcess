@@ -13,9 +13,9 @@
 		5BDD679C28F1DF9100F0FEE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD679A28F1DF9100F0FEE6 /* Main.storyboard */; };
 		5BDD679E28F1DF9200F0FEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD679D28F1DF9200F0FEE6 /* Assets.xcassets */; };
 		5BDD67A128F1DF9200F0FEE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD679F28F1DF9200F0FEE6 /* LaunchScreen.storyboard */; };
-		5BDD67AC28F1DF9200F0FEE6 /* ChessTimerTddProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67AB28F1DF9200F0FEE6 /* ChessTimerTddProcessTests.swift */; };
 		5BDD67B628F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67B528F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift */; };
 		5BDD67B828F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67B728F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift */; };
+		5BDD67C728F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +45,10 @@
 		5BDD67A028F1DF9200F0FEE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BDD67A228F1DF9200F0FEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDD67A728F1DF9200F0FEE6 /* ChessTimerTddProcessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTimerTddProcessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BDD67AB28F1DF9200F0FEE6 /* ChessTimerTddProcessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTddProcessTests.swift; sourceTree = "<group>"; };
 		5BDD67B128F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTimerTddProcessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD67B528F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTddProcessUITests.swift; sourceTree = "<group>"; };
 		5BDD67B728F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTddProcessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +99,7 @@
 		5BDD679328F1DF9100F0FEE6 /* ChessTimerTddProcess */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD67C428F1E28C00F0FEE6 /* PlayerTime */,
 				5BDD679428F1DF9100F0FEE6 /* AppDelegate.swift */,
 				5BDD679628F1DF9100F0FEE6 /* SceneDelegate.swift */,
 				5BDD679828F1DF9100F0FEE6 /* ViewController.swift */,
@@ -113,7 +114,7 @@
 		5BDD67AA28F1DF9200F0FEE6 /* ChessTimerTddProcessTests */ = {
 			isa = PBXGroup;
 			children = (
-				5BDD67AB28F1DF9200F0FEE6 /* ChessTimerTddProcessTests.swift */,
+				5BDD67C528F1E29B00F0FEE6 /* PlayerTimeTest */,
 			);
 			path = ChessTimerTddProcessTests;
 			sourceTree = "<group>";
@@ -125,6 +126,21 @@
 				5BDD67B728F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift */,
 			);
 			path = ChessTimerTddProcessUITests;
+			sourceTree = "<group>";
+		};
+		5BDD67C428F1E28C00F0FEE6 /* PlayerTime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerTime;
+			sourceTree = "<group>";
+		};
+		5BDD67C528F1E29B00F0FEE6 /* PlayerTimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */,
+			);
+			path = PlayerTimeTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BDD67AC28F1DF9200F0FEE6 /* ChessTimerTddProcessTests.swift in Sources */,
+				5BDD67C728F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
