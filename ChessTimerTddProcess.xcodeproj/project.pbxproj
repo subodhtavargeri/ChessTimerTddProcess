@@ -23,6 +23,8 @@
 		5BDD67D128F1E63800F0FEE6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D028F1E63800F0FEE6 /* Game.swift */; };
 		5BDD67D328F1E65000F0FEE6 /* PlayerTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */; };
 		5BDD67D528F202ED00F0FEE6 /* PlayerTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D428F202ED00F0FEE6 /* PlayerTimerFactory.swift */; };
+		5BDD67D828F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D728F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift */; };
+		5BDD67DA28F2092700F0FEE6 /* GameSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D928F2092700F0FEE6 /* GameSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		5BDD67D028F1E63800F0FEE6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTimerViewController.xib; sourceTree = "<group>"; };
 		5BDD67D428F202ED00F0FEE6 /* PlayerTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerFactory.swift; sourceTree = "<group>"; };
+		5BDD67D728F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerViewControllerSpy.swift; sourceTree = "<group>"; };
+		5BDD67D928F2092700F0FEE6 /* GameSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +163,19 @@
 		5BDD67C528F1E29B00F0FEE6 /* PlayerTimeTest */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD67D628F207E100F0FEE6 /* Spy */,
 				5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */,
 			);
 			path = PlayerTimeTest;
+			sourceTree = "<group>";
+		};
+		5BDD67D628F207E100F0FEE6 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD67D728F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift */,
+				5BDD67D928F2092700F0FEE6 /* GameSpy.swift */,
+			);
+			path = Spy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDD67DA28F2092700F0FEE6 /* GameSpy.swift in Sources */,
+				5BDD67D828F2080800F0FEE6 /* PlayerTimerViewControllerSpy.swift in Sources */,
 				5BDD67C728F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

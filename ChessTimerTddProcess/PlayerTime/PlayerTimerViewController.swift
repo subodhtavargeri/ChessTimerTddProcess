@@ -1,6 +1,7 @@
 import UIKit
 
 protocol PlayerTimerViewProtocol: AnyObject {
+    func setTitle(title: String)
 }
 
 class PlayerTimerViewController: UIViewController {
@@ -9,13 +10,20 @@ class PlayerTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupInitial()
     }
     
     func setup(presenter: PlayerTimerPresenterProtocol) {
         self.presenter = presenter
     }
+    
+    func setupInitial() {
+        self.presenter?.loadPresenter()
+    }
 }
 
 extension PlayerTimerViewController : PlayerTimerViewProtocol {
-    
+    func setTitle(title: String) {
+        self.title = title
+    }
 }

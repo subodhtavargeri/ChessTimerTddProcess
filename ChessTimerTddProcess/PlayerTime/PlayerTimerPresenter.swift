@@ -2,7 +2,8 @@ import Foundation
 
 import Foundation
 
-protocol PlayerTimerPresenterProtocol:AnyObject {
+protocol PlayerTimerPresenterProtocol: AnyObject {
+    func loadPresenter()
 }
 
 class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
@@ -14,6 +15,14 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
          game: GameProtocol) {
         self.controller = controller
         self.game = game
+    }
+    
+    func loadPresenter() {
+        setTitle()
+    }
+    
+    private func setTitle() {
+        controller?.setTitle(title: "Game Timer")
     }
     
 }
