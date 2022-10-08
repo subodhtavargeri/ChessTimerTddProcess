@@ -16,6 +16,12 @@
 		5BDD67B628F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67B528F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift */; };
 		5BDD67B828F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67B728F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift */; };
 		5BDD67C728F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */; };
+		5BDD67C928F1E44400F0FEE6 /* PlayerTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67C828F1E44400F0FEE6 /* PlayerTimerPresenter.swift */; };
+		5BDD67CB28F1E4C200F0FEE6 /* ChessTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67CA28F1E4C200F0FEE6 /* ChessTimerRouter.swift */; };
+		5BDD67CD28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67CC28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift */; };
+		5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */; };
+		5BDD67D128F1E63800F0FEE6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D028F1E63800F0FEE6 /* Game.swift */; };
+		5BDD67D328F1E65000F0FEE6 /* PlayerTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5BDD67B528F1DF9200F0FEE6 /* ChessTimerTddProcessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTddProcessUITests.swift; sourceTree = "<group>"; };
 		5BDD67B728F1DF9200F0FEE6 /* ChessTimerTddProcessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTddProcessUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5BDD67C628F1E2D300F0FEE6 /* PlayerTimerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerPresenterTests.swift; sourceTree = "<group>"; };
+		5BDD67C828F1E44400F0FEE6 /* PlayerTimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerPresenter.swift; sourceTree = "<group>"; };
+		5BDD67CA28F1E4C200F0FEE6 /* ChessTimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerRouter.swift; sourceTree = "<group>"; };
+		5BDD67CC28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerRouterProtocol.swift; sourceTree = "<group>"; };
+		5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerViewController.swift; sourceTree = "<group>"; };
+		5BDD67D028F1E63800F0FEE6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTimerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,8 @@
 				5BDD679D28F1DF9200F0FEE6 /* Assets.xcassets */,
 				5BDD679F28F1DF9200F0FEE6 /* LaunchScreen.storyboard */,
 				5BDD67A228F1DF9200F0FEE6 /* Info.plist */,
+				5BDD67CA28F1E4C200F0FEE6 /* ChessTimerRouter.swift */,
+				5BDD67CC28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift */,
 			);
 			path = ChessTimerTddProcess;
 			sourceTree = "<group>";
@@ -131,6 +145,10 @@
 		5BDD67C428F1E28C00F0FEE6 /* PlayerTime */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD67C828F1E44400F0FEE6 /* PlayerTimerPresenter.swift */,
+				5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */,
+				5BDD67D028F1E63800F0FEE6 /* Game.swift */,
+				5BDD67D228F1E65000F0FEE6 /* PlayerTimerViewController.xib */,
 			);
 			path = PlayerTime;
 			sourceTree = "<group>";
@@ -250,6 +268,7 @@
 				5BDD67A128F1DF9200F0FEE6 /* LaunchScreen.storyboard in Resources */,
 				5BDD679E28F1DF9200F0FEE6 /* Assets.xcassets in Resources */,
 				5BDD679C28F1DF9100F0FEE6 /* Main.storyboard in Resources */,
+				5BDD67D328F1E65000F0FEE6 /* PlayerTimerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDD679928F1DF9100F0FEE6 /* ViewController.swift in Sources */,
+				5BDD67CD28F1E4D600F0FEE6 /* ChessTimerRouterProtocol.swift in Sources */,
 				5BDD679528F1DF9100F0FEE6 /* AppDelegate.swift in Sources */,
 				5BDD679728F1DF9100F0FEE6 /* SceneDelegate.swift in Sources */,
+				5BDD67C928F1E44400F0FEE6 /* PlayerTimerPresenter.swift in Sources */,
+				5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */,
+				5BDD67CB28F1E4C200F0FEE6 /* ChessTimerRouter.swift in Sources */,
+				5BDD67D128F1E63800F0FEE6 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
