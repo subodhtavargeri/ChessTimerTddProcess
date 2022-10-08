@@ -2,6 +2,7 @@ import UIKit
 
 protocol PlayerTimerViewProtocol: AnyObject {
     func setTitle(title: String)
+    func setPlayerOneLabelTimer(timer: String)
 }
 
 class PlayerTimerViewController: UIViewController {
@@ -26,5 +27,9 @@ class PlayerTimerViewController: UIViewController {
 extension PlayerTimerViewController : PlayerTimerViewProtocol {
     func setTitle(title: String) {
         self.title = title
+    }
+    
+    func setPlayerOneLabelTimer(timer: String) {
+        
     }
 }

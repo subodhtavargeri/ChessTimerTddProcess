@@ -4,6 +4,10 @@ import Foundation
 
 class PlayerTimerPresenterSpy: PlayerTimerPresenterProtocol {
     
+    func displayPlayerOneTimer(playerOneTimer: Int) {
+        
+    }
+    
     func startGame(gameTime: Int) {
         
     }
@@ -11,6 +15,5 @@ class PlayerTimerPresenterSpy: PlayerTimerPresenterProtocol {
     func loadPresenter() {
         
     }
-    
     
 }

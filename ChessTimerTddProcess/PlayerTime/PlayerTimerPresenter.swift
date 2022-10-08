@@ -5,10 +5,11 @@ import Foundation
 protocol PlayerTimerPresenterProtocol: AnyObject {
     func loadPresenter()
     func startGame(gameTime: Int)
+    func displayPlayerOneTimer(playerOneTimer: Int)
 }
 
 class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
-
+    
     weak var controller: PlayerTimerViewProtocol?
     let game: GameProtocol?
     
@@ -28,6 +29,10 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
     
     func startGame(gameTime: Int) {
         self.game?.gameStart(gameTime: gameTime)
+    }
+    
+    func displayPlayerOneTimer(playerOneTimer: Int) {
+        self.controller?.setPlayerOneLabelTimer(timer: "\(playerOneTimer)")
     }
     
 }

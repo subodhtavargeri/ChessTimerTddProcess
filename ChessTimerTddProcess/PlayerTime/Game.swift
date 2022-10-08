@@ -31,6 +31,7 @@ class Game: GameProtocol {
     
     @objc func updatePlayerOneTimer() {
         if let timer = playerOne?.timeLeft, timer >= 0 {
+            presenter?.displayPlayerOneTimer(playerOneTimer: timer)
             return
         }
     }
