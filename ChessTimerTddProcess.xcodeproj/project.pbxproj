@@ -27,6 +27,7 @@
 		5BDD67DA28F2092700F0FEE6 /* GameSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67D928F2092700F0FEE6 /* GameSpy.swift */; };
 		5BDD67DC28F20B0300F0FEE6 /* PlayerTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67DB28F20B0300F0FEE6 /* PlayerTimerViewController.swift */; };
 		5BDD67DE28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67DD28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift */; };
+		5BDD67E128F2102000F0FEE6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD67E028F2102000F0FEE6 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		5BDD67D928F2092700F0FEE6 /* GameSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpy.swift; sourceTree = "<group>"; };
 		5BDD67DB28F20B0300F0FEE6 /* PlayerTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerViewController.swift; sourceTree = "<group>"; };
 		5BDD67DD28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimerPresenterSpy.swift; sourceTree = "<group>"; };
+		5BDD67E028F2102000F0FEE6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		5BDD67C428F1E28C00F0FEE6 /* PlayerTime */ = {
 			isa = PBXGroup;
 			children = (
+				5BDD67DF28F2100400F0FEE6 /* PlayerModel */,
 				5BDD67C828F1E44400F0FEE6 /* PlayerTimerPresenter.swift */,
 				5BDD67CE28F1E62800F0FEE6 /* PlayerTimerViewController.swift */,
 				5BDD67D028F1E63800F0FEE6 /* Game.swift */,
@@ -182,6 +185,14 @@
 				5BDD67DD28F20B5100F0FEE6 /* PlayerTimerPresenterSpy.swift */,
 			);
 			path = Spy;
+			sourceTree = "<group>";
+		};
+		5BDD67DF28F2100400F0FEE6 /* PlayerModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD67E028F2102000F0FEE6 /* Player.swift */,
+			);
+			path = PlayerModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 				5BDD67C928F1E44400F0FEE6 /* PlayerTimerPresenter.swift in Sources */,
 				5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */,
 				5BDD67CB28F1E4C200F0FEE6 /* ChessTimerRouter.swift in Sources */,
+				5BDD67E128F2102000F0FEE6 /* Player.swift in Sources */,
 				5BDD67D128F1E63800F0FEE6 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

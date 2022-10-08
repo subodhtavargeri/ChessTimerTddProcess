@@ -7,6 +7,7 @@ protocol PlayerTimerViewProtocol: AnyObject {
 class PlayerTimerViewController: UIViewController {
     
     private var presenter: PlayerTimerPresenterProtocol?
+    private let gameTimer = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()

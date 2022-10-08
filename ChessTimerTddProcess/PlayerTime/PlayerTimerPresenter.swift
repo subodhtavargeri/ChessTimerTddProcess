@@ -4,6 +4,7 @@ import Foundation
 
 protocol PlayerTimerPresenterProtocol: AnyObject {
     func loadPresenter()
+    func startGame(gameTime: Int)
 }
 
 class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
@@ -23,6 +24,10 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
     
     private func setTitle() {
         controller?.setTitle(title: "Game Timer")
+    }
+    
+    func startGame(gameTime: Int) {
+        self.game?.gameStart(gameTime: gameTime)
     }
     
 }
