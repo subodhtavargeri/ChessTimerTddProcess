@@ -53,4 +53,9 @@ class Game: GameProtocol {
         playerOneTimer = nil
         playerOne?.state = .stop
     }
+    
+    func pauseGame() {
+        gameState = .paused
+        stopPlayerOneTimer()
+    }
 }

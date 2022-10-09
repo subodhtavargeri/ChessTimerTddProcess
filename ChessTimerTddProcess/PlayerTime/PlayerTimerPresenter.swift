@@ -35,7 +35,6 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
             self.game?.gameStart(gameTime: gameTime)
             return
         }
-        
     }
     
     func displayPlayerOneTimer(playerOneTimer: Int) {
