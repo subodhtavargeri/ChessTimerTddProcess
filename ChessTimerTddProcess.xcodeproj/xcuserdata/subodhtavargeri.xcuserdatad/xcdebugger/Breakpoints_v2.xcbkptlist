@@ -55,48 +55,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D5360D5-EE60-4868-A574-0E33D94CA03D"
+            uuid = "9574E184-06ED-4BE2-BB1D-558FDB0CC286"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChessTimerTddProcess/PlayerTime/Game.swift"
+            filePath = "ChessTimerTddProcess/PlayerTime/PlayerTimerPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "updatePlayerOneTimer()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "startGame(gameTime:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FFCCA62A-5338-4495-9C87-45CC03D4A2B0"
+            uuid = "EEE248E1-C58C-4F3D-9A2E-FCD852C361A6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChessTimerTddProcess/PlayerTime/Game.swift"
+            filePath = "ChessTimerTddProcessTests/PlayerTimeTest/PlayerTimerPresenterTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "updatePlayerOneTimer()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "testStartGame()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "08F09DE5-1FA9-431F-BDE9-9B468C3F6532"
+            uuid = "1A7F35BA-C4EA-466D-80B6-57B0C95BB637"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChessTimerTddProcess/PlayerTime/Game.swift"
+            filePath = "ChessTimerTddProcessTests/PlayerTimeTest/Spy/GameSpy.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "resumePlayerOne()"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "gameStart(gameTime:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
