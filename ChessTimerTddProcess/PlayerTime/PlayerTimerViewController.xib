@@ -87,12 +87,24 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-Ov-UrN">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="playerTwoButtonPressed:" destination="-1" eventType="touchUpInside" id="nki-kZ-ikj"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                     <constraints>
+                        <constraint firstItem="8TD-Ov-UrN" firstAttribute="leading" secondItem="YTC-ZV-99Y" secondAttribute="leading" id="79v-TE-lMs"/>
+                        <constraint firstAttribute="trailing" secondItem="8TD-Ov-UrN" secondAttribute="trailing" id="IRs-7A-IiB"/>
                         <constraint firstItem="aJB-DX-wvI" firstAttribute="centerX" secondItem="YTC-ZV-99Y" secondAttribute="centerX" id="QPq-db-bP7"/>
                         <constraint firstAttribute="height" constant="200" id="UvH-iP-Z3S"/>
+                        <constraint firstItem="8TD-Ov-UrN" firstAttribute="top" secondItem="YTC-ZV-99Y" secondAttribute="top" id="d49-Jn-Xki"/>
                         <constraint firstItem="aJB-DX-wvI" firstAttribute="centerY" secondItem="YTC-ZV-99Y" secondAttribute="centerY" id="juC-Uw-78W"/>
+                        <constraint firstAttribute="bottom" secondItem="8TD-Ov-UrN" secondAttribute="bottom" id="p4R-Hb-Exb"/>
                     </constraints>
                 </view>
             </subviews>

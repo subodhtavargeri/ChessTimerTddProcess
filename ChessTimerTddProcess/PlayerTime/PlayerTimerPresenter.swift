@@ -8,6 +8,7 @@ protocol PlayerTimerPresenterProtocol: AnyObject {
     func displayPlayerOneTimer(playerOneTimer: Int)
     func displayPlayerTwoTimer(playerTwoTimer: Int)
     func accessPlayerOne()
+    func accessPlayerTwo()
 }
 
 class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
@@ -47,6 +48,16 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
         if (gameState == .resume || gameState == .start) && player == 1 {
             game?.stopPlayerOneTimer()
             game?.resumePlayerTwoTimer()
+        }
+    }
+    
+    func accessPlayerTwo() {
+        let gameState = game?.getGameState()
+        let player = game?.getCurrentPlayer()
+        
+        if (gameState == .resume || gameState == .start) && player == 2 {
+            game?.stopPlayerTwoTimer()
+            game?.resumePlayerOneTimer()
         }
     }
     

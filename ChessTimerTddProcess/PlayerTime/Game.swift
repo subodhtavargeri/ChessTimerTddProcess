@@ -7,11 +7,12 @@ protocol GameProtocol {
     func getCurrentPlayer() -> Int
     func getGameState() -> GameState?
     func stopPlayerOneTimer()
+    func stopPlayerTwoTimer()
     func pauseGame()
 }
 
 class Game: GameProtocol {
-    
+ 
     weak var presenter: PlayerTimerPresenterProtocol?
     private var playerOne: Player?
     private var playerTwo: Player?
@@ -67,6 +68,12 @@ class Game: GameProtocol {
         playerOneTimer?.invalidate()
         playerOneTimer = nil
         playerOne?.state = .stop
+    }
+    
+    func stopPlayerTwoTimer() {
+        playerTwoTimer?.invalidate()
+        playerTwoTimer = nil
+        playerTwo?.state = .stop
     }
     
     func pauseGame() {

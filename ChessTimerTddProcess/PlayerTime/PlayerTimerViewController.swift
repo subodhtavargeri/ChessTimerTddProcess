@@ -34,6 +34,10 @@ class PlayerTimerViewController: UIViewController {
     @IBAction func playerOneButtonPressed(_ sender: Any) {
         self.presenter?.accessPlayerOne()
     }
+    
+    @IBAction func playerTwoButtonPressed(_ sender: Any) {
+        presenter?.accessPlayerTwo()
+    }
 }
 
 extension PlayerTimerViewController : PlayerTimerViewProtocol {

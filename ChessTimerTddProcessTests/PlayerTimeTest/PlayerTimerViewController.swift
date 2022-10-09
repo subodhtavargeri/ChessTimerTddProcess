@@ -39,4 +39,18 @@ class PlayerTimerViewControllerTests: XCTestCase {
         let expecation = "2"
         XCTAssertEqual(sut.labelPlayerTwoTimer.text, expecation)
     }
+    
+    func testAccessPlayerOne() {
+        sut.playerOneButtonPressed((Any).self)
+        
+        let expecation = 1
+        XCTAssertEqual(presenter.timer, expecation)
+    }
+    
+    func testAccessPlayerTwo() {
+        sut.playerTwoButtonPressed(Any.self)
+        
+        let expecation = 2
+        XCTAssertEqual(presenter.timer, expecation)
+    }
 }

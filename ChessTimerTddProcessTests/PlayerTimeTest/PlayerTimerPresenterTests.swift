@@ -55,6 +55,7 @@ class PlayerTimerPresenterTests: XCTestCase {
         let presenter = PlayerTimerPresenter(controller: view, game: game)
         
         game.resumePlayerTwoTimer()
+        presenter.startGame(gameTime: 2)
       
         let expected = "PlayerTwo"
         XCTAssertEqual(game.resumePlayer,expected)
