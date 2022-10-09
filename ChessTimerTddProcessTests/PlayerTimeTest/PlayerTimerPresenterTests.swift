@@ -37,15 +37,26 @@ class PlayerTimerPresenterTests: XCTestCase {
         XCTAssertEqual(game.time,expected)
     }
     
-    func testWhenGameIsResumed() {
+    func testWhenGamePlayerOneIsResumed() {
         let view = PlayerTimerViewControllerSpy()
         let game = GameSpy()
         let presenter = PlayerTimerPresenter(controller: view, game: game)
         
-        game.resumePlayerOne()
+        game.resumePlayerOneTimer()
         presenter.startGame(gameTime: 2)
         
         let expected = "PlayerOne"
+        XCTAssertEqual(game.resumePlayer,expected)
+    }
+    
+    func testWhenGamePlayerTwoIsResumed() {
+        let view = PlayerTimerViewControllerSpy()
+        let game = GameSpy()
+        let presenter = PlayerTimerPresenter(controller: view, game: game)
+        
+        game.resumePlayerTwoTimer()
+      
+        let expected = "PlayerTwo"
         XCTAssertEqual(game.resumePlayer,expected)
     }
     
@@ -69,5 +80,16 @@ class PlayerTimerPresenterTests: XCTestCase {
         
         let expected = 0
         XCTAssertEqual(game.time,expected)
+    }
+    
+    func testDisplayPlayerTwoTimer() {
+        let view = PlayerTimerViewControllerSpy()
+        let game = GameSpy()
+        let presenter = PlayerTimerPresenter(controller: view, game: game)
+        
+        presenter.displayPlayerTwoTimer(playerTwoTimer: 5)
+        
+        let expected = "5"
+        XCTAssertEqual(view.title,expected)
     }
 }

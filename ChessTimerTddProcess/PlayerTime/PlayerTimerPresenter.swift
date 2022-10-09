@@ -6,6 +6,7 @@ protocol PlayerTimerPresenterProtocol: AnyObject {
     func loadPresenter()
     func startGame(gameTime: Int)
     func displayPlayerOneTimer(playerOneTimer: Int)
+    func displayPlayerTwoTimer(playerTwoTimer: Int)
     func accessPlayerOne()
 }
 
@@ -45,6 +46,7 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
         
         if (gameState == .resume || gameState == .start) && player == 1 {
             game?.stopPlayerOneTimer()
+            game?.resumePlayerTwoTimer()
         }
     }
     
@@ -52,4 +54,7 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
         self.controller?.setPlayerOneLabelTimer(timer: "\(playerOneTimer)")
     }
     
+    func displayPlayerTwoTimer(playerTwoTimer: Int) {
+        self.controller?.setPlayerTwoLabelTimer(timer: "\(playerTwoTimer)")
+    }
 }

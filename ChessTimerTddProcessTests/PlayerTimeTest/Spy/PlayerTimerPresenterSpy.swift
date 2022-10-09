@@ -3,7 +3,7 @@ import Foundation
 
 
 class PlayerTimerPresenterSpy: PlayerTimerPresenterProtocol {
-    
+  
     var timer = 0
     
     func displayPlayerOneTimer(playerOneTimer: Int) {
@@ -20,6 +20,10 @@ class PlayerTimerPresenterSpy: PlayerTimerPresenterProtocol {
     
     func accessPlayerOne() {
         
+    }
+    
+    func displayPlayerTwoTimer(playerTwoTimer: Int) {
+        timer = playerTwoTimer
     }
     
 }

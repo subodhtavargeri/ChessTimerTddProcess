@@ -29,13 +29,13 @@ class GameTests: XCTestCase {
         let presenter = PlayerTimerPresenterSpy()
         game.setup(presenter: presenter)
         
-        game.resumePlayerOne()
+        game.resumePlayerOneTimer()
         
         let expectation = 1
         XCTAssertEqual(game.getCurrentPlayer(), expectation)
     }
     
-    func testPlayerOneTImerIsStopped() {
+    func testPlayerOneTimerIsStopped() {
         let game = Game()
         let presenter = PlayerTimerPresenterSpy()
         game.setup(presenter: presenter)
@@ -55,5 +55,17 @@ class GameTests: XCTestCase {
         
         let expectation = GameState.paused
         XCTAssertEqual(game.getGameState(),expectation)
+    }
+    
+    func testResumePlayerTwo() {
+        let game = Game()
+        let presenter = PlayerTimerPresenterSpy()
+        game.setup(presenter: presenter)
+        
+        game.gameStart(gameTime: 2)
+        game.resumePlayerTwoTimer()
+        
+        let expectation = 2
+        XCTAssertEqual(game.getCurrentPlayer(), expectation)
     }
 }

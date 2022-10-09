@@ -2,7 +2,8 @@ import Foundation
 
 protocol GameProtocol {
     func gameStart(gameTime: Int)
-    func resumePlayerOne()
+    func resumePlayerOneTimer()
+    func resumePlayerTwoTimer() 
     func getCurrentPlayer() -> Int
     func getGameState() -> GameState?
     func stopPlayerOneTimer()
@@ -16,6 +17,7 @@ class Game: GameProtocol {
     private var playerTwo: Player?
     private var currentPlayer: Int?
     private var playerOneTimer: Timer?
+    private var playerTwoTimer: Timer?
     private var gameState: GameState?
     
     func setup(presenter: PlayerTimerPresenterProtocol) {
@@ -26,17 +28,29 @@ class Game: GameProtocol {
         playerOne = Player(playerId: 1, state: .start, totalTime: gameTime)
         playerTwo = Player(playerId: 2, state: .stop, totalTime: gameTime)
         gameState = .start
-        resumePlayerOne()
+        resumePlayerOneTimer()
     }
     
-    func resumePlayerOne() {
+    func resumePlayerOneTimer() {
         currentPlayer = playerOne?.playerId
         playerOneTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updatePlayerOneTimer), userInfo: nil, repeats: true)
+    }
+    
+    func resumePlayerTwoTimer() {
+        currentPlayer = playerTwo?.playerId
+        playerTwoTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updatePlayerTwoTimer), userInfo: nil, repeats: true)
     }
     
     @objc func updatePlayerOneTimer() {
         if let timer = playerOne?.timeLeft, timer >= 0 {
             presenter?.displayPlayerOneTimer(playerOneTimer: timer)
+            return
+        }
+    }
+    
+    @objc func updatePlayerTwoTimer() {
+        if let timer = playerTwo?.timeLeft, timer >= 0 {
+            presenter?.displayPlayerTwoTimer(playerTwoTimer: timer)
             return
         }
     }
