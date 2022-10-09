@@ -18,4 +18,8 @@ class PlayerTimerPresenterSpy: PlayerTimerPresenterProtocol {
         
     }
     
+    func accessPlayerOne() {
+        
+    }
+    
 }

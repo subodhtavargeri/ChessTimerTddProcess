@@ -6,6 +6,7 @@ protocol PlayerTimerPresenterProtocol: AnyObject {
     func loadPresenter()
     func startGame(gameTime: Int)
     func displayPlayerOneTimer(playerOneTimer: Int)
+    func accessPlayerOne()
 }
 
 class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
@@ -36,6 +37,15 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
         }
     
         game?.gameStart(gameTime: gameTime)
+    }
+    
+    func accessPlayerOne() {
+        let gameState = game?.getGameState()
+        let player = game?.getCurrentPlayer()
+        
+        if (gameState == .resume || gameState == .start) && player == 1 {
+            game?.stopPlayerOneTimer()
+        }
     }
     
     func displayPlayerOneTimer(playerOneTimer: Int) {

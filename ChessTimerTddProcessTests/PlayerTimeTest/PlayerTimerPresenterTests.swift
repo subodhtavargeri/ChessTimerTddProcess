@@ -60,4 +60,14 @@ class PlayerTimerPresenterTests: XCTestCase {
         XCTAssertEqual(view.title,expected)
     }
  
+    func testAccessPlayerOne() {
+        let view = PlayerTimerViewControllerSpy()
+        let game = GameSpy()
+        let presenter = PlayerTimerPresenter(controller: view, game: game)
+        
+        presenter.accessPlayerOne()
+        
+        let expected = 0
+        XCTAssertEqual(game.time,expected)
+    }
 }
