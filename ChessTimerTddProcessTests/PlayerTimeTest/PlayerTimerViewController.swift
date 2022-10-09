@@ -32,4 +32,11 @@ class PlayerTimerViewControllerTests: XCTestCase {
         let expectation = 20
         XCTAssertEqual(presenter.timer, expectation)
     }
+    
+    func testPlayerTwoTimerLabelIsDisplayed() {
+        sut.setPlayerTwoLabelTimer(timer: "2")
+        
+        let expecation = "2"
+        XCTAssertEqual(sut.labelPlayerTwoTimer.text, expecation)
+    }
 }

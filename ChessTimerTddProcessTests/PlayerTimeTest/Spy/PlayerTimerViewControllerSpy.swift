@@ -2,6 +2,8 @@ import Foundation
 @testable import ChessTimerTddProcess
 
 class PlayerTimerViewControllerSpy: PlayerTimerViewProtocol {
+    
+    
     var title: String?
     
     func setTitle(title: String) {
@@ -9,6 +11,9 @@ class PlayerTimerViewControllerSpy: PlayerTimerViewProtocol {
     }
     
     func setPlayerOneLabelTimer(timer: String) {
+        self.title = timer
+    }
+    func setPlayerTwoLabelTimer(timer: String) {
         self.title = timer
     }
     

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerTimerViewController" customModule="ChessTimerTddProcess" customModuleProvider="target">
             <connections>
                 <outlet property="labelPlayerOneTimer" destination="Pbd-jn-B1W" id="ttg-P1-eiJ"/>
+                <outlet property="labelPlayerTwoTimer" destination="aJB-DX-wvI" id="VAW-nH-mBV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bey-L4-INc"/>
             </connections>
         </placeholder>
@@ -20,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU5-xw-trU" userLabel="PlayerOneView">
-                    <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbd-jn-B1W">
-                            <rect key="frame" x="144" y="110" width="126.5" height="30"/>
+                            <rect key="frame" x="144" y="85" width="126.5" height="30"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -32,21 +33,21 @@
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                     <constraints>
                         <constraint firstItem="Pbd-jn-B1W" firstAttribute="centerX" secondItem="JU5-xw-trU" secondAttribute="centerX" id="FT1-E5-SIe"/>
-                        <constraint firstAttribute="height" constant="250" id="NMI-8c-Xua"/>
+                        <constraint firstAttribute="height" constant="200" id="NMI-8c-Xua"/>
                         <constraint firstItem="Pbd-jn-B1W" firstAttribute="centerY" secondItem="JU5-xw-trU" secondAttribute="centerY" id="aTg-Kv-oeK"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRm-YQ-5Vi" userLabel="SettingView">
-                    <rect key="frame" x="0.0" y="294" width="414" height="250"/>
+                    <rect key="frame" x="0.0" y="244" width="414" height="150"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-Se-R1t" userLabel="Start">
-                            <rect key="frame" x="178" y="110" width="58.5" height="30"/>
+                            <rect key="frame" x="178" y="60" width="58.5" height="30"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd0-jg-Ayl">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain"/>
                             <connections>
@@ -57,12 +58,29 @@
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <constraints>
                         <constraint firstItem="xEx-Se-R1t" firstAttribute="centerX" secondItem="gRm-YQ-5Vi" secondAttribute="centerX" id="L4G-fR-2jB"/>
-                        <constraint firstAttribute="height" constant="250" id="POp-iP-10z"/>
+                        <constraint firstAttribute="height" constant="150" id="POp-iP-10z"/>
                         <constraint firstItem="hd0-jg-Ayl" firstAttribute="top" secondItem="gRm-YQ-5Vi" secondAttribute="top" id="ZYk-5l-mEt"/>
                         <constraint firstAttribute="trailing" secondItem="hd0-jg-Ayl" secondAttribute="trailing" id="auj-eH-Iyn"/>
                         <constraint firstItem="hd0-jg-Ayl" firstAttribute="leading" secondItem="gRm-YQ-5Vi" secondAttribute="leading" id="hRN-dx-MO5"/>
                         <constraint firstItem="xEx-Se-R1t" firstAttribute="centerY" secondItem="gRm-YQ-5Vi" secondAttribute="centerY" id="l67-9O-d26"/>
                         <constraint firstAttribute="bottom" secondItem="hd0-jg-Ayl" secondAttribute="bottom" id="oxr-f1-Knc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTC-ZV-99Y" userLabel="PlayerTwoView">
+                    <rect key="frame" x="0.0" y="394" width="414" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJB-DX-wvI" userLabel="Player Two">
+                            <rect key="frame" x="143.5" y="85" width="127" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstItem="aJB-DX-wvI" firstAttribute="centerX" secondItem="YTC-ZV-99Y" secondAttribute="centerX" id="QPq-db-bP7"/>
+                        <constraint firstAttribute="height" constant="200" id="UvH-iP-Z3S"/>
+                        <constraint firstItem="aJB-DX-wvI" firstAttribute="centerY" secondItem="YTC-ZV-99Y" secondAttribute="centerY" id="juC-Uw-78W"/>
                     </constraints>
                 </view>
             </subviews>
@@ -71,9 +89,12 @@
             <constraints>
                 <constraint firstItem="gRm-YQ-5Vi" firstAttribute="trailing" secondItem="JU5-xw-trU" secondAttribute="trailing" id="2mV-Tq-BAG"/>
                 <constraint firstItem="gRm-YQ-5Vi" firstAttribute="top" secondItem="JU5-xw-trU" secondAttribute="bottom" id="6ef-3V-Avu"/>
+                <constraint firstItem="YTC-ZV-99Y" firstAttribute="top" secondItem="gRm-YQ-5Vi" secondAttribute="bottom" id="Hb3-Di-Xj0"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JU5-xw-trU" secondAttribute="trailing" id="LoW-fk-g3P"/>
                 <constraint firstItem="gRm-YQ-5Vi" firstAttribute="leading" secondItem="JU5-xw-trU" secondAttribute="leading" id="QRC-17-261"/>
+                <constraint firstItem="YTC-ZV-99Y" firstAttribute="leading" secondItem="JU5-xw-trU" secondAttribute="leading" id="aGG-yd-Lml"/>
                 <constraint firstItem="JU5-xw-trU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cHm-82-8kR"/>
+                <constraint firstItem="YTC-ZV-99Y" firstAttribute="trailing" secondItem="JU5-xw-trU" secondAttribute="trailing" id="e82-BF-yHR"/>
                 <constraint firstItem="JU5-xw-trU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vEt-S2-n9F"/>
             </constraints>
             <point key="canvasLocation" x="132" y="82"/>

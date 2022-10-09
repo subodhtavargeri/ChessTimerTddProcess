@@ -3,6 +3,7 @@ import UIKit
 protocol PlayerTimerViewProtocol: AnyObject {
     func setTitle(title: String)
     func setPlayerOneLabelTimer(timer: String)
+    func setPlayerTwoLabelTimer(timer: String)
 }
 
 class PlayerTimerViewController: UIViewController {
@@ -10,6 +11,8 @@ class PlayerTimerViewController: UIViewController {
     private var presenter: PlayerTimerPresenterProtocol?
     private let gameTimer = 20
     @IBOutlet weak var labelPlayerOneTimer: UILabel!
+    
+    @IBOutlet weak var labelPlayerTwoTimer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +39,9 @@ extension PlayerTimerViewController : PlayerTimerViewProtocol {
     
     func setPlayerOneLabelTimer(timer: String) {
         labelPlayerOneTimer.text = timer
+    }
+    
+    func setPlayerTwoLabelTimer(timer: String) {
+        labelPlayerTwoTimer.text = timer
     }
 }
