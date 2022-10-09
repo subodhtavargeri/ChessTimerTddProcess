@@ -24,4 +24,15 @@ class GameTests: XCTestCase {
         XCTAssertNotNil(game.getCurrentPlayer())
     }
     
+    func testResumePlayerOne() {
+        let game = Game()
+        let presenter = PlayerTimerPresenterSpy()
+        game.setup(presenter: presenter)
+        
+        game.resumePlayerOne()
+        
+        let expectation = 1
+        XCTAssertEqual(game.getCurrentPlayer(), expectation)
+    }
+    
 }

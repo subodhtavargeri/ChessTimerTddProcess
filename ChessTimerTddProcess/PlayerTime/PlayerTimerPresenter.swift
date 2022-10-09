@@ -33,7 +33,9 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
         
         if (gameState == .resume || gameState == .start) && player == 1 {
             self.game?.gameStart(gameTime: gameTime)
+            return
         }
+        
     }
     
     func displayPlayerOneTimer(playerOneTimer: Int) {
