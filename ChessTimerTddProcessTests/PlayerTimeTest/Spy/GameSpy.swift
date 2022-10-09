@@ -26,4 +26,8 @@ class GameSpy: GameProtocol {
         return .start
     }
     
+    func stopPlayerOneTimer() {
+        time = 0
+    }
+    
 }

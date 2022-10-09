@@ -5,6 +5,7 @@ protocol GameProtocol {
     func resumePlayerOne()
     func getCurrentPlayer() -> Int
     func getGameState() -> GameState
+    func stopPlayerOneTimer()
 }
 
 class Game: GameProtocol {
@@ -45,5 +46,11 @@ class Game: GameProtocol {
     
     func getGameState() -> GameState {
         return gameState ?? .start
+    }
+    
+    func stopPlayerOneTimer() {
+        playerOneTimer?.invalidate()
+        playerOneTimer = nil
+        playerOne?.state = .stop
     }
 }

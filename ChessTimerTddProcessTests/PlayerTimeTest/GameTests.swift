@@ -35,4 +35,15 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.getCurrentPlayer(), expectation)
     }
     
+    func testPlayerOneTImerIsStopped() {
+        let game = Game()
+        let presenter = PlayerTimerPresenterSpy()
+        game.setup(presenter: presenter)
+        
+        game.stopPlayerOneTimer()
+        
+        let expectation = 1
+        XCTAssertEqual(game.getCurrentPlayer(), expectation)
+    }
+    
 }
