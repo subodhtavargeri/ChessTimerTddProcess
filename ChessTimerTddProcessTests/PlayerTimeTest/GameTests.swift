@@ -23,4 +23,5 @@ class GameTests: XCTestCase {
         
         XCTAssertNotNil(game.getCurrentPlayer())
     }
+    
 }
