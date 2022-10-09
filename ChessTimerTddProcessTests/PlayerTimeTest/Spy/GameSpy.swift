@@ -2,7 +2,7 @@ import Foundation
 @testable import ChessTimerTddProcess
 
 class GameSpy: GameProtocol {
-
+  
     var time = 0
     var resumePlayer = ""
     
@@ -22,12 +22,16 @@ class GameSpy: GameProtocol {
         return 1
     }
     
-    func getGameState() -> GameState {
+    func getGameState() -> GameState? {
         return .start
     }
     
     func stopPlayerOneTimer() {
         time = 0
+    }
+    
+    func pauseGame() {
+        time = 10
     }
     
 }

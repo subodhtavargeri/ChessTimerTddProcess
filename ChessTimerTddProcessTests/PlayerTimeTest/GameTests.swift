@@ -46,7 +46,7 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.getCurrentPlayer(), expectation)
     }
     
-    func testWhneGameIsPaused() {
+    func testWhenGameIsPaused() {
         let game = Game()
         let presenter = PlayerTimerPresenterSpy()
         game.setup(presenter: presenter)

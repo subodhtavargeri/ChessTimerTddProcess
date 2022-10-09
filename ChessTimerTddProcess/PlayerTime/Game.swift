@@ -4,8 +4,9 @@ protocol GameProtocol {
     func gameStart(gameTime: Int)
     func resumePlayerOne()
     func getCurrentPlayer() -> Int
-    func getGameState() -> GameState
+    func getGameState() -> GameState?
     func stopPlayerOneTimer()
+    func pauseGame()
 }
 
 class Game: GameProtocol {
@@ -44,8 +45,8 @@ class Game: GameProtocol {
         return currentPlayer ?? 1
     }
     
-    func getGameState() -> GameState {
-        return gameState ?? .start
+    func getGameState() -> GameState? {
+        return gameState
     }
     
     func stopPlayerOneTimer() {
