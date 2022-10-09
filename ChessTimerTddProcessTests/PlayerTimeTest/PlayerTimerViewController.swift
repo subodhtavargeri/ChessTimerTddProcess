@@ -19,4 +19,10 @@ class PlayerTimerViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.title, expecation)
     }
     
+    func testPlayerOneTimerLabelIsDisplayed() {
+        sut.setPlayerOneLabelTimer(timer: "2")
+        
+        let expecation = "2"
+        XCTAssertEqual(sut.labelPlayerOneTimer.text, expecation)
+    }
 }

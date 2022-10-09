@@ -9,6 +9,7 @@ class PlayerTimerViewController: UIViewController {
     
     private var presenter: PlayerTimerPresenterProtocol?
     private let gameTimer = 20
+    @IBOutlet weak var labelPlayerOneTimer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,6 @@ extension PlayerTimerViewController : PlayerTimerViewProtocol {
     }
     
     func setPlayerOneLabelTimer(timer: String) {
-        
+        labelPlayerOneTimer.text = timer
     }
 }
