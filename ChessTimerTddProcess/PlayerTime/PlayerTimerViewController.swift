@@ -23,6 +23,10 @@ class PlayerTimerViewController: UIViewController {
     func setupInitial() {
         self.presenter?.loadPresenter()
     }
+    
+    @IBAction func buttonGameSettingClicked(_ sender: Any) {
+        self.presenter?.startGame(gameTime: gameTimer)
+    }
 }
 
 extension PlayerTimerViewController : PlayerTimerViewProtocol {
