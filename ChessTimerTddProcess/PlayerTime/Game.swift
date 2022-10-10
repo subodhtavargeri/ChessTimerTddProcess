@@ -17,7 +17,7 @@ class Game: GameProtocol {
     private var playerOne: Player?
     private var playerTwo: Player?
     private var currentPlayer: Int?
-    private var playerOneTimer: Timer?
+    var playerOneTimer: PlayerTimer?
     private var playerTwoTimer: Timer?
     private var gameState: GameState?
     
@@ -34,7 +34,8 @@ class Game: GameProtocol {
     
     func resumePlayerOneTimer() {
         currentPlayer = playerOne?.playerId
-        playerOneTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updatePlayerOneTimer), userInfo: nil, repeats: true)
+        playerOneTimer = PlayerTimer.init(game: self)
+//        playerOneTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updatePlayerOneTimer), userInfo: nil, repeats: true)
     }
     
     func resumePlayerTwoTimer() {
@@ -47,6 +48,9 @@ class Game: GameProtocol {
             presenter?.displayPlayerOneTimer(playerOneTimer: timer)
             return
         }
+        stopPlayerTwoTimer()
+        stopPlayerOneTimer()
+        gameState = .end
     }
     
     @objc func updatePlayerTwoTimer() {
@@ -54,6 +58,9 @@ class Game: GameProtocol {
             presenter?.displayPlayerTwoTimer(playerTwoTimer: timer)
             return
         }
+        stopPlayerTwoTimer()
+        stopPlayerOneTimer()
+        gameState = .end
     }
     
     func getCurrentPlayer() -> Int {
@@ -65,8 +72,7 @@ class Game: GameProtocol {
     }
     
     func stopPlayerOneTimer() {
-        playerOneTimer?.invalidate()
-        playerOneTimer = nil
+        playerOneTimer?.stopTimer()
         playerOne?.state = .stop
     }
     

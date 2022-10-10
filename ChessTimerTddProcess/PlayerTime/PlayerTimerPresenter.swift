@@ -62,10 +62,20 @@ class PlayerTimerPresenter: PlayerTimerPresenterProtocol {
     }
     
     func displayPlayerOneTimer(playerOneTimer: Int) {
+        if playerOneTimer == 0 {
+            controller?.setPlayerOneLabelTimer(timer: "Player One Lost")
+            controller?.setPlayerTwoLabelTimer(timer: "Player Two Won")
+            return
+        }
         self.controller?.setPlayerOneLabelTimer(timer: "\(playerOneTimer)")
     }
     
     func displayPlayerTwoTimer(playerTwoTimer: Int) {
+        if playerTwoTimer == 0 {
+            controller?.setPlayerOneLabelTimer(timer: "Player One Won")
+            controller?.setPlayerTwoLabelTimer(timer: "Player Two Lost")
+            return
+        }
         self.controller?.setPlayerTwoLabelTimer(timer: "\(playerTwoTimer)")
     }
 }

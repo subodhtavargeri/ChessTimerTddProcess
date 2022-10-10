@@ -93,4 +93,26 @@ class PlayerTimerPresenterTests: XCTestCase {
         let expected = "5"
         XCTAssertEqual(view.title,expected)
     }
+    
+    func testDisplayPlayerTwoWonMessageWhenPlayerOneTimerIsZero() {
+        let view = PlayerTimerViewControllerSpy()
+        let game = GameSpy()
+        let presenter = PlayerTimerPresenter(controller: view, game: game)
+        
+        presenter.displayPlayerOneTimer(playerOneTimer: 0)
+        
+        let expected = "Player Two Won"
+        XCTAssertEqual(view.title,expected)
+    }
+    
+    func testDisplayPlayerTwoLostMessageWhenPlayerTwoTimerIsZerop() {
+        let view = PlayerTimerViewControllerSpy()
+        let game = GameSpy()
+        let presenter = PlayerTimerPresenter(controller: view, game: game)
+        
+        presenter.displayPlayerTwoTimer(playerTwoTimer: 0)
+        
+        let expected = "Player Two Lost"
+        XCTAssertEqual(view.title,expected)
+    }
 }

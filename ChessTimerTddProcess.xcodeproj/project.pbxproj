@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B24FBC628F3BEE0007CBBD9 /* PlayerTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24FBC528F3BEE0007CBBD9 /* PlayerTimer.swift */; };
 		5BDD679528F1DF9100F0FEE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD679428F1DF9100F0FEE6 /* AppDelegate.swift */; };
 		5BDD679728F1DF9100F0FEE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD679628F1DF9100F0FEE6 /* SceneDelegate.swift */; };
 		5BDD679928F1DF9100F0FEE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD679828F1DF9100F0FEE6 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B24FBC528F3BEE0007CBBD9 /* PlayerTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimer.swift; sourceTree = "<group>"; };
 		5BDD679128F1DF9100F0FEE6 /* ChessTimerTddProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessTimerTddProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD679428F1DF9100F0FEE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDD679628F1DF9100F0FEE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDD67E028F2102000F0FEE6 /* Player.swift */,
+				5B24FBC528F3BEE0007CBBD9 /* PlayerTimer.swift */,
 			);
 			path = PlayerModel;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				5BDD679528F1DF9100F0FEE6 /* AppDelegate.swift in Sources */,
 				5BDD679728F1DF9100F0FEE6 /* SceneDelegate.swift in Sources */,
 				5BDD67D528F202ED00F0FEE6 /* PlayerTimerFactory.swift in Sources */,
+				5B24FBC628F3BEE0007CBBD9 /* PlayerTimer.swift in Sources */,
 				5BDD67C928F1E44400F0FEE6 /* PlayerTimerPresenter.swift in Sources */,
 				5BDD67CF28F1E62800F0FEE6 /* PlayerTimerViewController.swift in Sources */,
 				5BDD67CB28F1E4C200F0FEE6 /* ChessTimerRouter.swift in Sources */,
